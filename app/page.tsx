@@ -11,6 +11,7 @@ export default function Home() {
 
           <main>
             <h2>Main</h2>
+            {/* <p>{process.version}</p> */}
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste reprehenderit ab illo, accusantium neque vero sunt est tempore atque laudantium aliquam placeat cupiditate debitis. Expedita eos tempore eius est possimus?</p>
           </main>
 
