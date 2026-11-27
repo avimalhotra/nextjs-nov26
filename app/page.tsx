@@ -1,5 +1,7 @@
 import Nav from "@/component/nav";
 import Footer from "@/component/footer";
+import CarsAPI from "@/component/carapi";
+import { Suspense } from "react";
 
 export default function Home() {
 
@@ -13,6 +15,12 @@ export default function Home() {
             <h2>Main</h2>
             {/* <p>{process.version}</p> */}
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste reprehenderit ab illo, accusantium neque vero sunt est tempore atque laudantium aliquam placeat cupiditate debitis. Expedita eos tempore eius est possimus?</p>
+            <hr />
+
+            <Suspense fallback={<p>Lading...</p>}>
+              <CarsAPI></CarsAPI>
+            </Suspense>
+
           </main>
 
           <Footer></Footer>
